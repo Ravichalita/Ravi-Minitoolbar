@@ -2,28 +2,28 @@
    Design System & Variable Declarations
    ========================================================================== */
 :root {
-    /* Color Palette (HSL Tailored Colors) */
-    --bg-base: hsl(222, 28%, 7%);
-    --bg-surface: hsla(223, 25%, 12%, 0.7);
-    --bg-surface-opaque: hsl(223, 25%, 12%);
-    --bg-card: hsla(223, 25%, 15%, 0.4);
+    /* Color Palette (Charcoal Grey Tones & LibreOffice Fresh Green) */
+    --bg-base: hsl(220, 10%, 8%);
+    --bg-surface: hsla(220, 8%, 14%, 0.7);
+    --bg-surface-opaque: hsl(220, 8%, 14%);
+    --bg-card: hsla(220, 8%, 15%, 0.4);
     
-    --accent-primary: hsl(192, 95%, 50%);
-    --accent-primary-rgb: 0, 242, 254;
-    --accent-secondary: hsl(207, 95%, 55%);
+    --accent-primary: #44a622; /* LibreOffice Brand Green */
+    --accent-primary-rgb: 68, 166, 34;
+    --accent-secondary: #107c41; /* Rich LibreOffice Accent Green */
     --accent-gradient: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
     
-    --text-primary: hsl(210, 25%, 98%);
-    --text-secondary: hsl(215, 20%, 75%);
-    --text-muted: hsl(215, 12%, 55%);
+    --text-primary: hsl(210, 20%, 98%);
+    --text-secondary: hsl(215, 15%, 75%);
+    --text-muted: hsl(215, 10%, 55%);
     
-    --border-color: hsla(220, 20%, 25%, 0.4);
-    --border-hover: hsla(192, 95%, 50%, 0.3);
+    --border-color: hsla(220, 6%, 24%, 0.4);
+    --border-hover: hsla(105, 65%, 45%, 0.3);
     
     --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.25);
     --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.4);
-    --shadow-accent: 0 8px 24px rgba(0, 242, 254, 0.15);
+    --shadow-accent: 0 8px 24px rgba(68, 166, 34, 0.15);
     
     /* Layout & Spacing */
     --radius-sm: 6px;
@@ -389,7 +389,7 @@ body.lang-en .lang-toggle-btn .pt-active {
 
 .hero-preview-card {
     width: 100%;
-    max-width: 440px;
+    max-width: 580px;
     border-radius: var(--radius-lg);
     overflow: hidden;
     background: linear-gradient(135deg, hsla(223, 25%, 15%, 0.8) 0%, hsla(223, 25%, 10%, 0.8) 100%);
@@ -440,7 +440,7 @@ body.lang-en .lang-toggle-btn .pt-active {
 }
 
 .highlight-placeholder {
-    background-color: hsla(192, 95%, 50%, 0.2);
+    background-color: hsla(105, 65%, 45%, 0.2);
     border-bottom: 2px solid var(--accent-primary);
     padding: 0 4px;
     border-radius: 2px;
@@ -515,9 +515,9 @@ body.lang-en .lang-toggle-btn .pt-active {
 }
 
 .tb-btn-mock.active {
-    background: #00f2fe; /* Real cian active */
-    color: #0f172a;
-    border: 1px solid #00f2fe;
+    background: #44a622; /* Real LibreOffice green active */
+    color: #ffffff;
+    border: 1px solid #44a622;
 }
 
 .color-icon-mock {
@@ -681,7 +681,7 @@ body.lang-en .lang-toggle-btn .pt-active {
 }
 
 .tb-dropdown-trigger:hover {
-    border-color: #00f2fe;
+    border-color: #44a622;
 }
 
 .tb-dropdown-trigger::after {
@@ -722,7 +722,7 @@ body.lang-en .lang-toggle-btn .pt-active {
 }
 
 .tb-dropdown-item:hover {
-    background: #00f2fe;
+    background: #44a622;
     color: #0f172a;
 }
 
@@ -754,9 +754,9 @@ body.lang-en .lang-toggle-btn .pt-active {
 }
 
 .tb-btn.active {
-    background: #00f2fe; /* REAL vibrant neon cian */
-    color: #0f172a;
-    border-color: #00f2fe;
+    background: #44a622; /* REAL vibrant brand green */
+    color: #ffffff;
+    border-color: #44a622;
 }
 
 /* Colors palettes wrapper */
@@ -811,7 +811,7 @@ body.lang-en .lang-toggle-btn .pt-active {
 
 .color-swatch:hover {
     transform: scale(1.2);
-    border-color: #00f2fe;
+    border-color: #44a622;
 }
 
 /* Alignment Menu Dropdown */
