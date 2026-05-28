@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Addons" oor:package="org.openoffice.Office">
+  <node oor:name="AddonUI">
+    <node oor:name="OfficeMenuBar">
+      <node oor:name="org.ravic.minitoolbar.MiniToolbarExtension" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Ravi Mini Toolbar</value>
+          <value xml:lang="pt-BR">Ravi Mini Toolbar</value>
+        </prop>
+        <node oor:name="Submenu">
+          <node oor:name="m1" oor:op="replace">
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en-US">Ravi Mini Toolbar</value>
+              <value xml:lang="pt-BR">Ravi Mini Toolbar</value>
+            </prop>
+            <node oor:name="Submenu">
+              <node oor:name="s1" oor:op="replace">
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">Activated</value>
+                  <value xml:lang="pt-BR">Ativada</value>
+                </prop>
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>org.ravic.minitoolbar.extension:Enable</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
+              </node>
+              <node oor:name="s2" oor:op="replace">
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">Deactivated</value>
+                  <value xml:lang="pt-BR">Desativada</value>
+                </prop>
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>org.ravic.minitoolbar.extension:Disable</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
+              </node>
+            </node>
+          </node>
+          <node oor:name="m2" oor:op="replace">
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en-US">Icon Size</value>
+              <value xml:lang="pt-BR">Tamanho dos Ícones</value>
+            </prop>
+            <node oor:name="Submenu">
+              <node oor:name="s3" oor:op="replace">
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">Large Icons</value>
+                  <value xml:lang="pt-BR">Ícones Grandes</value>
+                </prop>
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>org.ravic.minitoolbar.extension:LargeIcons</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
+              </node>
+              <node oor:name="s4" oor:op="replace">
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">Standard Icons</value>
+                  <value xml:lang="pt-BR">Ícones Pequenos</value>
+                </prop>
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>org.ravic.minitoolbar.extension:SmallIcons</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</oor:component-data>

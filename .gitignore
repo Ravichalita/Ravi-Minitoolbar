@@ -1,0 +1,17 @@
+# Temporary AI agent files
+~ai-*.tmp
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+ENV/
+env/
+
+# OS-specific files
+Thumbs.db
+desktop.ini
+.DS_Store

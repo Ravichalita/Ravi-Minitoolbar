@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<desc:description xmlns:desc="http://openoffice.org/extensions/description/2006" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc:identifier value="org.ravic.minitoolbar.extension"/>
+    <desc:version value="2.0.7"/>
+    <desc:display-name>
+        <desc:name lang="en-US">Ravi Mini Toolbar</desc:name>
+        <desc:name lang="pt-BR">Ravi Mini Toolbar</desc:name>
+    </desc:display-name>
+</desc:description>
