@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ravi Mini Toolbar — A smart, floating, and premium formatting toolbar for LibreOffice. Elevate your productivity.">
+    <meta name="keywords" content="LibreOffice, Extension, Mini Toolbar, Formatting, Productivity, Word, Docs">
+    <meta name="author" content="ravichalita">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ravi Mini Toolbar — LibreOffice Extension">
+    <meta property="og:description" content="Add a contextual, elegant formatting toolbar identical to MS Word and Google Docs to LibreOffice.">
+    <meta property="og:image" content="https://ravi-minitoolbar.vercel.app/logo.png">
+
+    <!-- Title -->
+    <title id="page-title">Ravi Mini Toolbar — Extensão para LibreOffice</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-pt">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
+                    <rect x="2" y="5" width="20" height="14" rx="3" fill="url(#logo-grad)" />
+                    <rect x="5" y="9" width="3" height="3" rx="0.5" fill="white" fill-opacity="0.9"/>
+                    <rect x="10.5" y="9" width="3" height="3" rx="0.5" fill="white" fill-opacity="0.9"/>
+                    <rect x="16" y="9" width="3" height="3" rx="0.5" fill="white" fill-opacity="0.9"/>
+                    <rect x="5" y="14" width="6" height="2" rx="0.5" fill="white" fill-opacity="0.5"/>
+                    <rect x="13" y="14" width="6" height="2" rx="0.5" fill="white" fill-opacity="0.5"/>
+                    <defs>
+                        <linearGradient id="logo-grad" x1="2" y1="5" x2="22" y2="19" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00F2FE"/>
+                            <stop offset="1" stop-color="#4FACFE"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">Ravi <span class="accent-text">MiniToolbar</span></span>
+            </a>
+            
+            <ul class="nav-links">
+                <li>
+                    <a href="#features">
+                        <span class="lang-el" lang="pt">Recursos</span>
+                        <span class="lang-el" lang="en">Features</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#demo">
+                        <span class="lang-el" lang="pt">Demonstração</span>
+                        <span class="lang-el" lang="en">Live Demo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#how-to-use">
+                        <span class="lang-el" lang="pt">Como Usar</span>
+                        <span class="lang-el" lang="en">How to Use</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Language Switcher Button -->
+                <button class="lang-toggle-btn" id="lang-toggle" aria-label="Alterar idioma / Toggle Language">
+                    <span class="lang-indicator pt-active">PT</span>
+                    <span class="lang-indicator en-active">EN</span>
+                </button>
+                <a href="https://github.com/Ravichalita/Ravi-Minitoolbar/releases" class="btn btn-primary nav-download" target="_blank">
+                    <span class="lang-el" lang="pt">Baixar Extensão</span>
+                    <span class="lang-el" lang="en">Download Now</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="lang-el" lang="pt">Versão v2.0.7</span>
+                    <span class="lang-el" lang="en">Version v2.0.7</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="lang-el" lang="pt">Produtividade flutuante no seu <span class="text-gradient">LibreOffice</span></span>
+                    <span class="lang-el" lang="en">Floating productivity for your <span class="text-gradient">LibreOffice</span></span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="lang-el" lang="pt">O Ravi Mini Toolbar adiciona uma barra de formatação contextual e elegante idêntica às do Word e Google Docs. Aumente drasticamente sua velocidade de escrita e formatação sem tirar a atenção do texto.</span>
+                    <span class="lang-el" lang="en">Ravi Mini Toolbar adds a contextual, elegant formatting toolbar identical to MS Word or Google Docs. Supercharge your writing flow and edit directly where your cursor is.</span>
+                </p>
+                <div class="hero-cta-group">
+                    <a href="https://github.com/Ravichalita/Ravi-Minitoolbar/releases" class="btn btn-primary btn-large" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15L12 3M12 15L8 11M12 15L16 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17C2 18.886 2 19.828 2.58579 20.4142C3.17157 21 4.11438 21 6 21H18C19.8856 21 20.8284 21 21.4142 20.4142C22 19.828 22 18.886 22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="lang-el" lang="pt">Baixar Grátis (.oxt)</span>
+                        <span class="lang-el" lang="en">Download Free (.oxt)</span>
+                    </a>
+                    <a href="#demo" class="btn btn-secondary btn-large">
+                        <span class="lang-el" lang="pt">Testar Simulador</span>
+                        <span class="lang-el" lang="en">Try Interactive Demo</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card hero-preview-card animate-float">
+                    <div class="card-header">
+                        <div class="dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="tab-title">LibreOffice Writer</div>
+                    </div>
+                    <div class="card-body-preview">
+                        <p class="preview-text">
+                            <span class="lang-el" lang="pt">Economize tempo e cliques durante o trabalho. O Ravi Mini Toolbar aparece <span class="highlight-placeholder">automaticamente logo abaixo</span> do texto selecionado.</span>
+                            <span class="lang-el" lang="en">Save precious time and clicks. The Ravi Mini Toolbar pops up <span class="highlight-placeholder">automatically right below</span> the highlighted text.</span>
+                        </p>
+                        
+                        <!-- Floating Toolbar Emulation (Static Look for Hero) -->
+                        <div class="mini-toolbar-mockup animate-pulse-border">
+                            <div class="tb-row">
+                                <span class="tb-select-mock">Liberation Serif</span>
+                                <span class="tb-size-mock">12</span>
+                                <span class="tb-divider"></span>
+                                <span class="tb-btn-mock active">B</span>
+                                <span class="tb-btn-mock">I</span>
+                                <span class="tb-btn-mock">U</span>
+                                <span class="tb-btn-mock color-icon-mock">A</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Demo Section (Interactive Simulator) -->
+    <section class="demo-section" id="demo">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-el" lang="pt">Experimente o <span class="text-gradient">Simulador Interativo</span></span>
+                    <span class="lang-el" lang="en">Try the <span class="text-gradient">Interactive Simulator</span></span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-el" lang="pt">Selecione qualquer trecho de texto no documento abaixo com o mouse ou teclado para ver a extensão em ação!</span>
+                    <span class="lang-el" lang="en">Highlight any text snippet in the document below using your mouse to see the toolbar in action!</span>
+                </p>
+            </div>
+
+            <div class="simulator-wrapper">
+                <div class="simulator-window glass-card">
+                    <!-- Simulator Window Header -->
+                    <div class="sim-header">
+                        <div class="sim-controls">
+                            <span class="sim-dot close"></span>
+                            <span class="sim-dot minimize"></span>
+                            <span class="sim-dot expand"></span>
+                        </div>
+                        <div class="sim-title">
+                            <span class="lang-el" lang="pt">Documento.odt — LibreOffice Writer</span>
+                            <span class="lang-el" lang="en">Document.odt — LibreOffice Writer</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Editor Area -->
+                    <div class="editor-area" id="editor-area" contenteditable="true">
+                        <p><strong><span class="lang-el" lang="pt">Olá! Seja bem-vindo ao teste interativo.</span><span class="lang-el" lang="en">Hello! Welcome to the interactive test.</span></strong></p>
+                        <p>
+                            <span class="lang-el" lang="pt">Esta é uma simulação fiel do LibreOffice. Para experimentar o <strong>Ravi MiniToolbar</strong>, faça o seguinte: use o cursor do seu mouse para <span class="highlight-demo">selecionar qualquer palavra ou frase</span> deste parágrafo. Assim que soltar o mouse, a nossa barra elegante aparecerá instantaneamente flutuando bem pertinho do seu cursor!</span>
+                            <span class="lang-el" lang="en">This is a realistic LibreOffice editor emulation. To experience the <strong>Ravi MiniToolbar</strong>, do the following: use your mouse to <span class="highlight-demo">highlight any word or sentence</span> in this paragraph. The moment you release your mouse, our beautiful floating toolbar will pop up right next to your selection!</span>
+                        </p>
+                        <p>
+                            <span class="lang-el" lang="pt">Você pode aplicar <em>Itálico</em>, mudar o tamanho da fonte para 16, pintar o texto de azul ou usar o marca-texto amarelo. Ao clicar fora ou voltar a digitar, a barra some suavemente sem atrapalhar seu fluxo.</span>
+                            <span class="lang-el" lang="en">You can apply <em>Italics</em>, change font size to 16, paint the text blue, or use the yellow background highlight. When you click away or type, the toolbar disappears cleanly.</span>
+                        </p>
+                    </div>
+
+                    <!-- Interactive Floating Mini Toolbar -->
+                    <div class="interactive-toolbar" id="interactive-toolbar">
+                        <!-- Font Family -->
+                        <div class="tb-dropdown" id="tb-font-dropdown">
+                            <div class="tb-dropdown-trigger" id="current-font">Arial</div>
+                            <div class="tb-dropdown-menu">
+                                <div class="tb-dropdown-item" data-value="Arial">Arial</div>
+                                <div class="tb-dropdown-item" data-value="Inter">Inter</div>
+                                <div class="tb-dropdown-item" data-value="Outfit">Outfit</div>
+                                <div class="tb-dropdown-item" data-value="Times New Roman">Times New Roman</div>
+                                <div class="tb-dropdown-item" data-value="Courier New">Courier New</div>
+                            </div>
+                        </div>
+
+                        <!-- Font Size Dropdown -->
+                        <div class="tb-dropdown size-dropdown" id="tb-size-dropdown">
+                            <div class="tb-dropdown-trigger" id="current-size">12</div>
+                            <div class="tb-dropdown-menu size-menu">
+                                <div class="tb-dropdown-item" data-value="10">10</div>
+                                <div class="tb-dropdown-item" data-value="12">12</div>
+                                <div class="tb-dropdown-item" data-value="14">14</div>
+                                <div class="tb-dropdown-item" data-value="16">16</div>
+                                <div class="tb-dropdown-item" data-value="18">18</div>
+                                <div class="tb-dropdown-item" data-value="24">24</div>
+                            </div>
+                        </div>
+
+                        <span class="tb-divider"></span>
+
+                        <!-- Style buttons -->
+                        <button class="tb-btn" id="btn-bold" title="Bold / Negrito">B</button>
+                        <button class="tb-btn" id="btn-italic" title="Italic / Itálico">I</button>
+                        <button class="tb-btn" id="btn-underline" title="Underline / Sublinhado">U</button>
+                        <button class="tb-btn" id="btn-strike" title="Strikethrough / Tachado">S</button>
+
+                        <span class="tb-divider"></span>
+
+                        <!-- Colors and highlights -->
+                        <div class="tb-btn-color-wrapper">
+                            <button class="tb-btn" id="btn-font-color" title="Font Color / Cor da Fonte">
+                                <span class="color-letter">A</span>
+                                <span class="color-indicator" id="font-color-indicator" style="background-color: #ff4757;"></span>
+                            </button>
+                            <div class="color-palette" id="font-color-palette">
+                                <div class="color-swatch" style="background-color: #ffffff;"></div>
+                                <div class="color-swatch" style="background-color: #ff4757;"></div>
+                                <div class="color-swatch" style="background-color: #2ed573;"></div>
+                                <div class="color-swatch" style="background-color: #1e90ff;"></div>
+                                <div class="color-swatch" style="background-color: #ffa502;"></div>
+                                <div class="color-swatch" style="background-color: #9b59b6;"></div>
+                                <div class="color-swatch" style="background-color: #2c3e50;"></div>
+                                <div class="color-swatch" style="background-color: #f1c40f;"></div>
+                            </div>
+                        </div>
+
+                        <div class="tb-btn-color-wrapper">
+                            <button class="tb-btn" id="btn-bg-color" title="Highlight Color / Realce de Fundo">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="url(#marker-grad)"/>
+                                </svg>
+                                <span class="color-indicator" id="bg-color-indicator" style="background-color: #ffff2e;"></span>
+                            </button>
+                            <div class="color-palette" id="bg-color-palette">
+                                <div class="color-swatch" style="background-color: transparent;"></div>
+                                <div class="color-swatch" style="background-color: #ffff2e;"></div>
+                                <div class="color-swatch" style="background-color: #2effd5;"></div>
+                                <div class="color-swatch" style="background-color: #ff2ebd;"></div>
+                                <div class="color-swatch" style="background-color: #2eff38;"></div>
+                                <div class="color-swatch" style="background-color: #ff852e;"></div>
+                                <div class="color-swatch" style="background-color: #2ebcff;"></div>
+                                <div class="color-swatch" style="background-color: #bd2eff;"></div>
+                            </div>
+                        </div>
+
+                        <span class="tb-divider"></span>
+
+                        <!-- Alignment Menu -->
+                        <div class="tb-btn-color-wrapper">
+                            <button class="tb-btn" id="btn-align" title="Alignment / Alinhamento">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="21" y1="6" x2="3" y2="6"/>
+                                    <line x1="15" y1="12" x2="3" y2="12"/>
+                                    <line x1="17" y1="18" x2="3" y2="18"/>
+                                </svg>
+                            </button>
+                            <div class="align-menu" id="align-menu">
+                                <button class="align-opt" data-align="left" title="Left">⬅</button>
+                                <button class="align-opt" data-align="center" title="Center">↔</button>
+                                <button class="align-opt" data-align="right" title="Right">➡</button>
+                                <button class="align-opt" data-align="justify" title="Justify">☰</button>
+                            </div>
+                        </div>
+
+                        <!-- Clear Formatting -->
+                        <button class="tb-btn text-danger" id="btn-clear" title="Clear Formatting / Limpar Formatação">⚡</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-el" lang="pt">Recursos e <span class="text-gradient">Funcionalidades</span></span>
+                    <span class="lang-el" lang="en">Key Features & <span class="text-gradient">Benefits</span></span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-el" lang="pt">Descubra como o Ravi Mini Toolbar transforma sua experiência de edição de texto.</span>
+                    <span class="lang-el" lang="en">Discover how the Ravi Mini Toolbar transforms your writing and editing workflow.</span>
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Card 1: Contextual -->
+                <div class="glass-card feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">
+                        <span class="lang-el" lang="pt">Aparição Contextual Inteligente</span>
+                        <span class="lang-el" lang="en">Smart Contextual Display</span>
+                    </h3>
+                    <p class="feature-card-text">
+                        <span class="lang-el" lang="pt">A barra surge de forma automática e precisa logo abaixo do cursor assim que você seleciona qualquer palavra ou frase. Sem desviar sua atenção.</span>
+                        <span class="lang-el" lang="en">The toolbar appears automatically and precisely right below the text the moment you highlight a word or phrase. Keeps your focus locked in.</span>
+                    </p>
+                </div>
+
+                <!-- Card 2: Invisivel -->
+                <div class="glass-card feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="1" y1="1" x2="23" y2="23" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">
+                        <span class="lang-el" lang="pt">Sumiço Invisível</span>
+                        <span class="lang-el" lang="en">Seamless Disappearance</span>
+                    </h3>
+                    <p class="feature-card-text">
+                        <span class="lang-el" lang="pt">Ela desaparece instantaneamente quando você clica em outra área do documento, volta a digitar ou pressiona a tecla ESC. Nada de poluição visual.</span>
+                        <span class="lang-el" lang="en">It vanishes instantly when you click elsewhere, start typing, or press the ESC key, keeping your workspace clutter-free and clean.</span>
+                    </p>
+                </div>
+
+                <!-- Card 3: Premium -->
+                <div class="glass-card feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">
+                        <span class="lang-el" lang="pt">Visual Moderno e Fluido</span>
+                        <span class="lang-el" lang="en">Modern Premium Look</span>
+                    </h3>
+                    <p class="feature-card-text">
+                        <span class="lang-el" lang="pt">Visual escuro moderno que combina com qualquer tema. Ela reconhece automaticamente as formatações existentes no texto selecionado e destaca os botões correspondentes em azul.</span>
+                        <span class="lang-el" lang="en">A sleek dark theme that blends beautifully with your document. It even recognizes formatting (like Bold) and highlights buttons in blue.</span>
+                    </p>
+                </div>
+
+                <!-- Card 4: Arrastavel -->
+                <div class="glass-card feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 9l-3 3 3 3M9 5l3-3 3 3M15 19l-3 3-3-3M19 9l3 3-3 3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="2" y1="12" x2="22" y2="12" stroke-linecap="round"/>
+                            <line x1="12" y1="2" x2="12" y2="22" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">
+                        <span class="lang-el" lang="pt">Liberdade de Movimento</span>
+                        <span class="lang-el" lang="en">Drag &amp; Drop Freedom</span>
+                    </h3>
+                    <p class="feature-card-text">
+                        <span class="lang-el" lang="pt">A barra de ferramentas não precisa cobrir seu conteúdo. Você pode clicar em qualquer lugar e arrastá-la livremente para a posição ideal na sua tela.</span>
+                        <span class="lang-el" lang="en">No screen blockages. If the toolbar ever covers important text, you can easily click and drag it to any other position on the screen.</span>
+                    </p>
+                </div>
+
+                <!-- Card 5: Alinhamento e cores -->
+                <div class="glass-card feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                            <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">
+                        <span class="lang-el" lang="pt">Cores, Realces e Tamanhos</span>
+                        <span class="lang-el" lang="en">Colors, Highlights &amp; Sizes</span>
+                    </h3>
+                    <p class="feature-card-text">
+                        <span class="lang-el" lang="pt">Ajuste de fontes, cores de letras, realce de marcadores com uma paleta rica de 24 cores, estilos como negrito, itálico, sobrescrito e alteração rápida de tamanho.</span>
+                        <span class="lang-el" lang="en">Adjust font family, font size, text colors and marker highlights with a 24-color palette, styles like bold, italic, superscript and rapid size increments.</span>
+                    </p>
+                </div>
+
+                <!-- Card 6: Limpeza -->
+                <div class="glass-card feature-card">
+                    <div class="feature-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card-title">
+                        <span class="lang-el" lang="pt">Limpeza de Estilos a 1-Clique</span>
+                        <span class="lang-el" lang="en">Quick Format Clear</span>
+                    </h3>
+                    <p class="feature-card-text">
+                        <span class="lang-el" lang="pt">Errou na formatação? O botão de limpeza rápida remove instantaneamente todas as alterações diretas, restaurando o texto ao estilo padrão do documento.</span>
+                        <span class="lang-el" lang="en">Made a formatting mistake? The quick clear button instantly strips away all custom direct styling, reverting the text to its original default.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To Use Section -->
+    <section class="how-to-use-section" id="how-to-use">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-el" lang="pt">Como Usar no <span class="text-gradient">Dia a Dia</span></span>
+                    <span class="lang-el" lang="en">How to Use it <span class="text-gradient">Everyday</span></span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-el" lang="pt">Passos simples para integrar a extensão ao seu fluxo de trabalho.</span>
+                    <span class="lang-el" lang="en">Simple steps to fully integrate the tool into your typing workflow.</span>
+                </p>
+            </div>
+
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-num">01</div>
+                    <h3 class="step-title">
+                        <span class="lang-el" lang="pt">Ative o Menu</span>
+                        <span class="lang-el" lang="en">Enable the Menu</span>
+                    </h3>
+                    <p class="step-text">
+                        <span class="lang-el" lang="pt">Um novo menu "Ravi Mini Toolbar" aparecerá no topo do LibreOffice. Ative a barra e defina a exibição de ícones (recomendamos ícones pequenos!).</span>
+                        <span class="lang-el" lang="en">A new menu named "Ravi Mini Toolbar" will appear in the top bar. Turn the tool on and choose your icon size (small is recommended).</span>
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-num">02</div>
+                    <h3 class="step-title">
+                        <span class="lang-el" lang="pt">Selecione o Texto</span>
+                        <span class="lang-el" lang="en">Highlight Text</span>
+                    </h3>
+                    <p class="step-text">
+                        <span class="lang-el" lang="pt">Selecione qualquer palavra ou parágrafo que queira editar usando o mouse ou os atalhos de teclado habituais (como Shift + setas).</span>
+                        <span class="lang-el" lang="en">Highlight any word or phrase you want to modify using your mouse or keyboard shortcuts (Shift + Arrow keys).</span>
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-num">03</div>
+                    <h3 class="step-title">
+                        <span class="lang-el" lang="pt">Formate e Escreva</span>
+                        <span class="lang-el" lang="en">Format &amp; Type</span>
+                    </h3>
+                    <p class="step-text">
+                        <span class="lang-el" lang="pt">A barra surgirá pertinho da seleção. Aplique os estilos desejados. Continue escrevendo ou clique fora para a barra desaparecer de forma fluida.</span>
+                        <span class="lang-el" lang="en">The toolbar pops up. Apply changes instantly, then keep typing or click away to make it disappear cleanly without breaks.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="cta-container glass-card">
+            <h2 class="cta-title">
+                <span class="lang-el" lang="pt">Pronto para transformar sua escrita?</span>
+                <span class="lang-el" lang="en">Ready to elevate your writing flow?</span>
+            </h2>
+            <p class="cta-subtitle">
+                <span class="lang-el" lang="pt">Baixe o Ravi Mini Toolbar agora e descubra uma forma muito mais confortável e produtiva de editar no LibreOffice.</span>
+                <span class="lang-el" lang="en">Download the Ravi Mini Toolbar extension today and experience a faster, more professional editing layout.</span>
+            </p>
+            <div class="cta-buttons">
+                <a href="https://github.com/Ravichalita/Ravi-Minitoolbar/releases" class="btn btn-primary btn-large" target="_blank">
+                    <span class="lang-el" lang="pt">Baixar Agora (Grátis)</span>
+                    <span class="lang-el" lang="en">Get it Now (Free)</span>
+                </a>
+                <a href="https://github.com/Ravichalita/Ravi-Minitoolbar" class="btn btn-secondary btn-large" target="_blank">
+                    <span class="lang-el" lang="pt">Ver no GitHub</span>
+                    <span class="lang-el" lang="en">View GitHub Repo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">
+                &copy; 2026 Ravi Mini Toolbar. 
+                <span class="lang-el" lang="pt">Distribuído gratuitamente sob licença de código aberto.</span>
+                <span class="lang-el" lang="en">Distributed for free under open source license.</span>
+            </p>
+            <p class="author-credits">
+                <span class="lang-el" lang="pt">Criado por <a href="https://github.com/ravichalita" target="_blank" class="footer-link">ravichalita</a></span>
+                <span class="lang-el" lang="en">Created by <a href="https://github.com/ravichalita" target="_blank" class="footer-link">ravichalita</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Marker Gradient SVG definitions -->
+    <svg width="0" height="0">
+        <defs>
+            <linearGradient id="marker-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffff2e"/>
+                <stop offset="100%" stop-color="#ffea00"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
