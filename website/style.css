@@ -3,27 +3,27 @@
    ========================================================================== */
 :root {
     /* Color Palette (Charcoal Grey Tones & LibreOffice Fresh Green) */
-    --bg-base: hsl(220, 10%, 8%);
-    --bg-surface: hsla(220, 8%, 14%, 0.7);
-    --bg-surface-opaque: hsl(220, 8%, 14%);
-    --bg-card: hsla(220, 8%, 15%, 0.4);
+    --bg-base: #121315; /* Professional neutral charcoal grey */
+    --bg-surface: rgba(28, 30, 34, 0.75);
+    --bg-surface-opaque: #1c1e22;
+    --bg-card: rgba(42, 45, 50, 0.45);
     
     --accent-primary: #44a622; /* LibreOffice Brand Green */
     --accent-primary-rgb: 68, 166, 34;
     --accent-secondary: #107c41; /* Rich LibreOffice Accent Green */
     --accent-gradient: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
     
-    --text-primary: hsl(210, 20%, 98%);
-    --text-secondary: hsl(215, 15%, 75%);
-    --text-muted: hsl(215, 10%, 55%);
+    --text-primary: #f3f4f6; /* Premium off-white */
+    --text-secondary: #c8cbd0; /* Clear slate gray */
+    --text-muted: #808080; /* Perfect neutral logo gray! */
     
-    --border-color: hsla(220, 6%, 24%, 0.4);
-    --border-hover: hsla(105, 65%, 45%, 0.3);
+    --border-color: rgba(128, 128, 128, 0.25); /* Translucent logo gray border */
+    --border-hover: rgba(68, 166, 34, 0.45); /* LibreOffice Green hover */
     
-    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.25);
-    --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.4);
-    --shadow-accent: 0 8px 24px rgba(68, 166, 34, 0.15);
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.5);
+    --shadow-accent: 0 8px 24px rgba(68, 166, 34, 0.2);
     
     /* Layout & Spacing */
     --radius-sm: 6px;
@@ -96,7 +96,7 @@ button {
 
 /* Selection Style */
 ::selection {
-    background-color: hsla(192, 95%, 50%, 0.3);
+    background-color: rgba(68, 166, 34, 0.3); /* LibreOffice green selection highlight */
     color: var(--text-primary);
 }
 
@@ -155,7 +155,7 @@ button {
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(0, 242, 254, 0.3);
+    box-shadow: 0 12px 32px rgba(68, 166, 34, 0.4);
 }
 
 .btn-secondary {
@@ -349,9 +349,9 @@ body.lang-en .lang-toggle-btn .pt-active {
 }
 
 .badge {
-    background: hsla(192, 95%, 50%, 0.1);
+    background: rgba(68, 166, 34, 0.1);
     color: var(--accent-primary);
-    border: 1px solid hsla(192, 95%, 50%, 0.2);
+    border: 1px solid rgba(68, 166, 34, 0.2);
     padding: 6px 14px;
     border-radius: 50px;
     font-size: 0.85rem;
@@ -389,10 +389,10 @@ body.lang-en .lang-toggle-btn .pt-active {
 
 .hero-preview-card {
     width: 100%;
-    max-width: 580px;
+    max-width: 660px; /* Increased horizontally to let the toolbar fit perfectly */
     border-radius: var(--radius-lg);
     overflow: hidden;
-    background: linear-gradient(135deg, hsla(223, 25%, 15%, 0.8) 0%, hsla(223, 25%, 10%, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(28, 30, 34, 0.85) 0%, rgba(18, 19, 21, 0.85) 100%);
     box-shadow: var(--shadow-lg);
 }
 
@@ -452,14 +452,15 @@ body.lang-en .lang-toggle-btn .pt-active {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    background: #0f172a;
-    border: 1px solid #1e293b;
-    box-shadow: 0 10px 30px rgba(0, 242, 254, 0.25);
+    background: #1c1e22; /* Neutral gray tone matching logo */
+    border: 1px solid #3f4448; /* Neutral gray tone border */
+    box-shadow: 0 10px 30px rgba(68, 166, 34, 0.25); /* LibreOffice Green shadow */
     border-radius: 0; /* REAL flat sharp corners */
-    padding: 4px 6px;
+    padding: 5px 7px;
     z-index: 10;
     width: max-content;
     box-sizing: border-box;
+    transition: var(--transition-smooth);
 }
 
 .tb-row {
@@ -495,7 +496,7 @@ body.lang-en .lang-toggle-btn .pt-active {
 .tb-divider {
     width: 1px;
     height: 14px;
-    background: #1e293b;
+    background: #3f4448; /* Neutral gray divider */
     margin: 0 3px;
 }
 
@@ -507,7 +508,7 @@ body.lang-en .lang-toggle-btn .pt-active {
     align-items: center;
     justify-content: center;
     border-radius: 0;
-    background: #1e293b;
+    background: #2a2d32; /* Neutral gray button base */
     color: #ffffff;
     font-size: 0.75rem;
     border: 1px solid transparent;
@@ -622,7 +623,7 @@ body.lang-en .lang-toggle-btn .pt-active {
 }
 
 .highlight-demo {
-    background-color: hsla(192, 95%, 50%, 0.15);
+    background-color: rgba(68, 166, 34, 0.15);
     border-bottom: 1px dashed var(--accent-primary);
     padding: 2px 0;
 }
@@ -632,8 +633,8 @@ body.lang-en .lang-toggle-btn .pt-active {
     position: absolute;
     width: 528px;
     height: 34px;
-    background: #0f172a;
-    border: 1px solid #1e293b;
+    background: #1c1e22; /* Neutral charcoal grey */
+    border: 1px solid #3f4448; /* Neutral grey border */
     box-shadow: var(--shadow-lg), 0 0 20px rgba(0, 0, 0, 0.4);
     border-radius: 0; /* REAL flat sharp corners */
     padding: 0 6px;
@@ -784,12 +785,12 @@ body.lang-en .lang-toggle-btn .pt-active {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 4px;
-    background: #0f172a;
-    border: 1px solid #1e293b;
+    background: #1c1e22; /* Neutral charcoal grey */
+    border: 1px solid #3f4448; /* Neutral grey border */
     border-radius: 0 !important;
     padding: 8px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr); /* 6 columns matching LibreOffice */
     gap: 6px;
     box-shadow: var(--shadow-md);
     z-index: 105;
@@ -821,8 +822,8 @@ body.lang-en .lang-toggle-btn .pt-active {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 4px;
-    background: #0f172a;
-    border: 1px solid #1e293b;
+    background: #1c1e22; /* Neutral charcoal grey */
+    border: 1px solid #3f4448; /* Neutral grey border */
     border-radius: 0 !important;
     padding: 6px;
     display: flex;
@@ -844,13 +845,13 @@ body.lang-en .lang-toggle-btn .pt-active {
     justify-content: center;
     border-radius: 0 !important;
     font-size: 0.8rem;
-    background: #1e293b;
+    background: #2a2d32; /* Neutral grey */
     color: #ffffff;
     transition: var(--transition-smooth);
 }
 
 .align-opt:hover {
-    background: #334155;
+    background: #3f4448;
 }
 
 .text-danger:hover {
@@ -1035,9 +1036,9 @@ body.lang-en .lang-toggle-btn .pt-active {
 }
 
 @keyframes pulse-border {
-    0% { box-shadow: 0 10px 30px rgba(0, 242, 254, 0.25); }
-    50% { box-shadow: 0 10px 35px rgba(0, 242, 254, 0.45); }
-    100% { box-shadow: 0 10px 30px rgba(0, 242, 254, 0.25); }
+    0% { box-shadow: 0 10px 30px rgba(68, 166, 34, 0.25); }
+    50% { box-shadow: 0 10px 35px rgba(68, 166, 34, 0.45); }
+    100% { box-shadow: 0 10px 30px rgba(68, 166, 34, 0.25); }
 }
 
 .animate-pulse-border {
@@ -1123,6 +1124,11 @@ body.lang-en .lang-toggle-btn .pt-active {
     .tb-divider {
         display: none;
     }
+
+    .mini-toolbar-mockup {
+        transform: translateX(-50%) scale(0.85);
+        bottom: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1137,5 +1143,10 @@ body.lang-en .lang-toggle-btn .pt-active {
     
     .nav-download {
         display: none; /* Hide nav download button on ultra small screens to prevent overlap */
+    }
+
+    .mini-toolbar-mockup {
+        transform: translateX(-50%) scale(0.68);
+        bottom: 12px;
     }
 }
