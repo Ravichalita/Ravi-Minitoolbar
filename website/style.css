@@ -452,67 +452,76 @@ body.lang-en .lang-toggle-btn .pt-active {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--bg-surface-opaque);
-    border: 1px solid var(--accent-primary);
+    background: #0f172a;
+    border: 1px solid #1e293b;
     box-shadow: 0 10px 30px rgba(0, 242, 254, 0.25);
-    border-radius: var(--radius-md);
-    padding: 8px 16px;
+    border-radius: 0; /* REAL flat sharp corners */
+    padding: 4px 6px;
     z-index: 10;
     width: max-content;
+    box-sizing: border-box;
 }
 
 .tb-row {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 0.8rem;
+    gap: 2px; /* REAL gap spacing */
+    font-size: 0.75rem;
 }
 
 .tb-select-mock, .tb-size-mock {
-    background: hsla(220, 20%, 20%, 0.5);
-    border: 1px solid var(--border-color);
-    padding: 3px 8px;
-    border-radius: var(--radius-sm);
-    color: var(--text-secondary);
+    background: #ffffff; /* REAL white input style */
+    border: 1px solid #7a7a7a;
+    padding: 1px 4px;
+    border-radius: 0;
+    color: #000000;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.7rem;
+    height: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.tb-select-mock {
+    width: 80px;
+}
+
+.tb-size-mock {
+    width: 32px;
+    justify-content: center;
 }
 
 .tb-divider {
     width: 1px;
-    height: 16px;
-    background: var(--border-color);
+    height: 14px;
+    background: #1e293b;
+    margin: 0 3px;
 }
 
 .tb-btn-mock {
     font-weight: 700;
-    width: 22px;
-    height: 22px;
+    width: 20px; /* Real small mockup button size */
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
-    color: var(--text-secondary);
+    border-radius: 0;
+    background: #1e293b;
+    color: #ffffff;
+    font-size: 0.75rem;
+    border: 1px solid transparent;
+    box-sizing: border-box;
 }
 
 .tb-btn-mock.active {
-    background: rgba(0, 242, 254, 0.1);
-    color: var(--accent-primary);
-    border: 1px solid rgba(0, 242, 254, 0.3);
+    background: #00f2fe; /* Real cian active */
+    color: #0f172a;
+    border: 1px solid #00f2fe;
 }
 
 .color-icon-mock {
-    color: #ff4757;
     position: relative;
-}
-
-.color-icon-mock::after {
-    content: '';
-    position: absolute;
-    bottom: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 2px;
-    background: #ff4757;
 }
 
 /* ==========================================================================
