@@ -1,3 +1,4 @@
+# pyrefly: ignore [missing-import]
 import uno
 import unohelper
 import os
@@ -1344,7 +1345,7 @@ class MiniToolbarExtension(
             "com.sun.star.awt.UnoControlDialogModel", self.ctx)
         model.Width = DW
         model.Height = DH
-        model.BackgroundColor = 0x2B2B2B
+        model.BackgroundColor = 0x0F172A
         model.Title = "MiniToolbar"
         try:
             model.Closeable = False
@@ -1506,7 +1507,7 @@ class MiniToolbarExtension(
         btn.Width = size
         btn.Height = size
         btn.FontHeight = fh
-        btn.BackgroundColor = 0x3C3C3C
+        btn.BackgroundColor = 0x1E293B
         btn.TextColor = 0xFFFFFF
         
         # Semiotics: format the button text using its respective character formatting
@@ -1594,7 +1595,8 @@ class MiniToolbarExtension(
                 if align_btn:
                     align_btn.getModel().Label = align_symbol
                     # Highlight if alignment is not default Left
-                    align_btn.getModel().BackgroundColor = 0x4A90E2 if not is_lft else 0x3C3C3C
+                    align_btn.getModel().BackgroundColor = 0x00F2FE if not is_lft else 0x1E293B
+                    align_btn.getModel().TextColor = 0x0F172A if not is_lft else 0xFFFFFF
             except:
                 pass
 
@@ -1611,7 +1613,8 @@ class MiniToolbarExtension(
                     btn = self.dialog.getControl(btn_name)
                     if btn:
                         model = btn.getModel()
-                        model.BackgroundColor = 0x4A90E2 if active else 0x3C3C3C
+                        model.BackgroundColor = 0x00F2FE if active else 0x1E293B
+                        model.TextColor = 0x0F172A if active else 0xFFFFFF
                 except:
                     pass
                     
@@ -1644,7 +1647,7 @@ class MiniToolbarExtension(
                     bg_color = getattr(vc, "CharBackColor", -1)
                     is_trans = getattr(vc, "CharBackTransparent", True)
                     if is_trans or bg_color == -1 or bg_color is None:
-                        hlit_model.BackgroundColor = 0x3C3C3C
+                        hlit_model.BackgroundColor = 0x1E293B
                         hlit_model.TextColor = 0xFFFFFF
                     else:
                         hlit_model.BackgroundColor = bg_color
@@ -1725,7 +1728,7 @@ class MiniToolbarExtension(
             "com.sun.star.awt.UnoControlDialogModel", self.ctx)
         m.Width = pw
         m.Height = ph
-        m.BackgroundColor = 0x2B2B2B
+        m.BackgroundColor = 0x0F172A
         m.Title = "AlignPick"
         try:
             m.Closeable = False
@@ -1755,7 +1758,7 @@ class MiniToolbarExtension(
             b.Width = BS
             b.Height = BS
             b.FontHeight = FH
-            b.BackgroundColor = 0x3C3C3C
+            b.BackgroundColor = 0x1E293B
             b.TextColor = 0xFFFFFF
             try:
                 b.HelpText = tooltip

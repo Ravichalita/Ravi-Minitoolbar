@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnItalic = document.getElementById('btn-italic');
     const btnUnderline = document.getElementById('btn-underline');
     const btnStrike = document.getElementById('btn-strike');
+    const btnSuperscript = document.getElementById('btn-superscript');
+    const btnSubscript = document.getElementById('btn-subscript');
     const btnClear = document.getElementById('btn-clear');
     
     // Fonts & Sizes
@@ -192,6 +194,8 @@ document.addEventListener('DOMContentLoaded', () => {
         btnItalic.classList.toggle('active', document.queryCommandState('italic'));
         btnUnderline.classList.toggle('active', document.queryCommandState('underline'));
         btnStrike.classList.toggle('active', document.queryCommandState('strikeThrough'));
+        btnSuperscript.classList.toggle('active', document.queryCommandState('superscript'));
+        btnSubscript.classList.toggle('active', document.queryCommandState('subscript'));
         
         // Update font name indicator
         try {
@@ -228,6 +232,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnStrike.addEventListener('mousedown', preventLossOfFocus);
     btnStrike.addEventListener('click', () => format('strikeThrough'));
+
+    btnSuperscript.addEventListener('mousedown', preventLossOfFocus);
+    btnSuperscript.addEventListener('click', () => format('superscript'));
+
+    btnSubscript.addEventListener('mousedown', preventLossOfFocus);
+    btnSubscript.addEventListener('click', () => format('subscript'));
 
     btnClear.addEventListener('mousedown', preventLossOfFocus);
     btnClear.addEventListener('click', () => format('removeFormat'));
