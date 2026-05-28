@@ -202,14 +202,16 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update font name indicator
         try {
             const font = document.queryCommandValue('fontName').replace(/['"]/g, '');
-            currentFont.textContent = font || 'Arial';
+            const cleanFont = font ? font.split(',')[0].trim() : 'Arial';
+            currentFont.textContent = cleanFont;
         } catch(e) {}
 
         // Update font size indicator
         try {
             const sizeMap = { '1': '10', '2': '12', '3': '14', '4': '16', '5': '18', '6': '24' };
             const sizeVal = document.queryCommandValue('fontSize');
-            currentSize.textContent = sizeMap[sizeVal] || '12';
+            const cleanSizeVal = sizeVal ? String(sizeVal).split(',')[0].trim() : '2';
+            currentSize.textContent = sizeMap[cleanSizeVal] || '12';
         } catch(e) {}
     }
 

@@ -296,6 +296,7 @@ body.lang-en [lang="pt"] {
     z-index: 2;
 }
 
+
 /* Selection sliding background inside language toggle */
 .lang-toggle-btn::before {
     content: '';
@@ -773,10 +774,10 @@ body.lang-en .lang-toggle-btn .pt-active {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 8px;
-    background: var(--bg-surface-opaque);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-sm);
+    margin-top: 4px;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 0 !important;
     padding: 8px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -793,7 +794,7 @@ body.lang-en .lang-toggle-btn .pt-active {
 .color-swatch {
     width: 18px;
     height: 18px;
-    border-radius: 3px;
+    border-radius: 0 !important;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: var(--transition-bounce);
@@ -801,7 +802,7 @@ body.lang-en .lang-toggle-btn .pt-active {
 
 .color-swatch:hover {
     transform: scale(1.2);
-    border-color: var(--accent-primary);
+    border-color: #00f2fe;
 }
 
 /* Alignment Menu Dropdown */
@@ -810,10 +811,10 @@ body.lang-en .lang-toggle-btn .pt-active {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 8px;
-    background: var(--bg-surface-opaque);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-sm);
+    margin-top: 4px;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 0 !important;
     padding: 6px;
     display: flex;
     gap: 6px;
@@ -832,13 +833,15 @@ body.lang-en .lang-toggle-btn .pt-active {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 3px;
+    border-radius: 0 !important;
     font-size: 0.8rem;
+    background: #1e293b;
+    color: #ffffff;
     transition: var(--transition-smooth);
 }
 
 .align-opt:hover {
-    background: hsla(220, 20%, 25%, 0.6);
+    background: #334155;
 }
 
 .text-danger:hover {
