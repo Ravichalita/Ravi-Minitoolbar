@@ -215,6 +215,10 @@
                             </div>
                         </div>
 
+                        <!-- Up/Down Size buttons (Exactly identical to real extension) -->
+                        <button class="tb-btn" id="btn-down" title="Diminuir tamanho da fonte">A▾</button>
+                        <button class="tb-btn" id="btn-up" title="Aumentar tamanho da fonte">A▴</button>
+
                         <span class="tb-divider"></span>
 
                         <!-- Style buttons -->
@@ -227,10 +231,21 @@
 
                         <span class="tb-divider"></span>
 
+                        <!-- Alignment Menu -->
+                        <div class="tb-btn-color-wrapper">
+                            <button class="tb-btn" id="btn-align" title="Alignment / Alinhamento">|≡</button>
+                            <div class="align-menu" id="align-menu">
+                                <button class="align-opt" data-align="left" title="Left">|≡</button>
+                                <button class="align-opt" data-align="center" title="Center"> ≡ </button>
+                                <button class="align-opt" data-align="right" title="Right">≡|</button>
+                                <button class="align-opt" data-align="justify" title="Justify">|≡|</button>
+                            </div>
+                        </div>
+
                         <!-- Colors and highlights -->
                         <div class="tb-btn-color-wrapper">
                             <button class="tb-btn" id="btn-font-color" title="Font Color / Cor da Fonte">
-                                <span class="color-letter">A</span>
+                                <span class="color-letter">A̲</span>
                                 <span class="color-indicator" id="font-color-indicator" style="background-color: #ff4757;"></span>
                             </button>
                             <div class="color-palette" id="font-color-palette">
@@ -247,9 +262,7 @@
 
                         <div class="tb-btn-color-wrapper">
                             <button class="tb-btn" id="btn-bg-color" title="Highlight Color / Realce de Fundo">
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="url(#marker-grad)"/>
-                                </svg>
+                                <span class="color-letter">ab</span>
                                 <span class="color-indicator" id="bg-color-indicator" style="background-color: #ffff2e;"></span>
                             </button>
                             <div class="color-palette" id="bg-color-palette">
@@ -266,25 +279,8 @@
 
                         <span class="tb-divider"></span>
 
-                        <!-- Alignment Menu -->
-                        <div class="tb-btn-color-wrapper">
-                            <button class="tb-btn" id="btn-align" title="Alignment / Alinhamento">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                    <line x1="21" y1="6" x2="3" y2="6"/>
-                                    <line x1="15" y1="12" x2="3" y2="12"/>
-                                    <line x1="17" y1="18" x2="3" y2="18"/>
-                                </svg>
-                            </button>
-                            <div class="align-menu" id="align-menu">
-                                <button class="align-opt" data-align="left" title="Left">⬅</button>
-                                <button class="align-opt" data-align="center" title="Center">↔</button>
-                                <button class="align-opt" data-align="right" title="Right">➡</button>
-                                <button class="align-opt" data-align="justify" title="Justify">☰</button>
-                            </div>
-                        </div>
-
                         <!-- Clear Formatting -->
-                        <button class="tb-btn text-danger" id="btn-clear" title="Clear Formatting / Limpar Formatação">⚡</button>
+                        <button class="tb-btn text-danger" id="btn-clear" title="Clear Formatting / Limpar Formatação">✕</button>
                     </div>
                 </div>
             </div>

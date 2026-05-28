@@ -62,6 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnStrike = document.getElementById('btn-strike');
     const btnSuperscript = document.getElementById('btn-superscript');
     const btnSubscript = document.getElementById('btn-subscript');
+    const btnDown = document.getElementById('btn-down');
+    const btnUp = document.getElementById('btn-up');
     const btnClear = document.getElementById('btn-clear');
     
     // Fonts & Sizes
@@ -238,6 +240,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnSubscript.addEventListener('mousedown', preventLossOfFocus);
     btnSubscript.addEventListener('click', () => format('subscript'));
+
+    btnDown.addEventListener('mousedown', preventLossOfFocus);
+    btnDown.addEventListener('click', () => {
+        const currentSizeVal = parseInt(document.queryCommandValue('fontSize')) || 2;
+        const newSize = Math.max(1, currentSizeVal - 1);
+        format('fontSize', newSize);
+    });
+
+    btnUp.addEventListener('mousedown', preventLossOfFocus);
+    btnUp.addEventListener('click', () => {
+        const currentSizeVal = parseInt(document.queryCommandValue('fontSize')) || 2;
+        const newSize = Math.min(7, currentSizeVal + 1);
+        format('fontSize', newSize);
+    });
 
     btnClear.addEventListener('mousedown', preventLossOfFocus);
     btnClear.addEventListener('click', () => format('removeFormat'));
