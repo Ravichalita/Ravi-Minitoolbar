@@ -26,9 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('preferred-lang', lang);
     }
 
-    // Load preferred or default language
-    const savedLang = localStorage.getItem('preferred-lang') || 
-                      (navigator.language.startsWith('en') ? 'en' : 'pt');
+    // Load preferred or default language (default to Portuguese if browser is Portuguese, otherwise English)
+    const browserLang = (navigator.language || '').toLowerCase();
+    const defaultLang = browserLang.startsWith('pt') ? 'pt' : 'en';
+    const savedLang = localStorage.getItem('preferred-lang') || defaultLang;
     setLanguage(savedLang);
 
     // Toggle language on click
